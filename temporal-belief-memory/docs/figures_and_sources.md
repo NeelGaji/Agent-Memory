@@ -1,0 +1,9 @@
+# Figure catalogue and provenance
+
+- `fig01_architecture`: *Proposed* EEM -> reconciler -> WBM design. Solid blocks denote the evaluated offline state-estimation path; the online query/navigation path is explicitly labeled future integration. A diagram is not evidence of the unimplemented modules.
+- `fig02_full_accuracy`: Full real-RGB FindingDory overall accuracy for Latest, Recency-Calibrated and StateMem-Calibrated, plus paired episode-cluster bootstrap intervals of differences vs baselines. Full validation run: 67 eligible episodes, 148 transitions, 963 state-evaluation steps. Zoomed accuracy scale is disclosed directly on the axis.
+- `fig03_sparsity`: Accuracy vs observation retention at 100/75/50/33%. Sparse results average 20 deterministic masks. This is a *post-hoc exploratory replay on the same validation set*, not an independent test.
+- `fig04_world_qa`: Multi-object offline QA across 335 synchronized queries in 44 episodes; visually distinguishes object-state accuracy from much lower exact-whole-world accuracy. Bootstrap intervals for method differences (not shown on grouped summary bars) cross zero.
+- `fig05_paired_effects`: Paired StateMem accuracy differences with episode-cluster 95% confidence intervals for full, sparse and delayed observation settings. Stress tests are exploratory.
+
+All numeric plot inputs are committed as `figures/figure_data.json`, derived from the *completed frozen run* (`test_overall.json`), `stress_results.csv`, `stress_bootstrap.csv`, `downstream_query_results.csv`, and `downstream_bootstrap.csv`. Run `python figures/generate_figures.py` to regenerate PNG/PDF/SVG outputs. Do not use these figures to claim direct superiority over LMEE or any other published agent: these are comparisons **among memory rules on our FindingDory evidence stream**.

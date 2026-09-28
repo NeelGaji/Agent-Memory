@@ -1,0 +1,22 @@
+{
+  "metadata_json_files_discovered": 32,
+  "tasks_indexed": 58,
+  "questions_indexed": 145,
+  "unique_scenes_in_indexed_tasks": 32,
+  "difficulty_counts": {
+    "easy": 14,
+    "hard": 7,
+    "medium": 37
+  },
+  "qa_category_counts": {
+    "Attribute": 37,
+    "Counting": 27,
+    "Location": 28,
+    "Relationship": 26,
+    "State": 27
+  },
+  "missing_field_counts": {},
+  "rgb_frames_downloaded_by_this_script": 0,
+  "has_observation_timeline_in_metadata": false,
+  "official_benchmark_score": null
+}

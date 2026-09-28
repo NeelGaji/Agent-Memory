@@ -1,0 +1,13 @@
+slice,method,n,accuracy
+consistent_current_evidence,Latest,689,0.7924528301886793
+consistent_current_evidence,Recency-Calibrated,689,0.7924528301886793
+consistent_current_evidence,StateMem-Calibrated,689,0.7939042089985486
+single_judged_current_evidence,Latest,76,0.6842105263157895
+single_judged_current_evidence,Recency-Calibrated,76,0.7105263157894737
+single_judged_current_evidence,StateMem-Calibrated,76,0.7368421052631579
+no_current_state_judgment,Latest,198,0.4595959595959596
+no_current_state_judgment,Recency-Calibrated,198,0.4595959595959596
+no_current_state_judgment,StateMem-Calibrated,198,0.4696969696969697
+weak_or_absent_current_evidence,Latest,274,0.5218978102189781
+weak_or_absent_current_evidence,Recency-Calibrated,274,0.5291970802919708
+weak_or_absent_current_evidence,StateMem-Calibrated,274,0.5437956204379562

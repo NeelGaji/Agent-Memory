@@ -1,0 +1,63 @@
+{
+  "native_report": {
+    "train_good_episodes": 1478,
+    "train_good_events": 7379,
+    "val_good_episodes": 100,
+    "val_good_events": 650
+  },
+  "supervision_stats": {
+    "train": {
+      "start_rows": 1437,
+      "start_mapped_groups": 6071,
+      "goal_rows": 1440,
+      "goal_mapped_groups": 6134,
+      "empty_group": 14,
+      "order_answer_length_mismatch": 79
+    },
+    "val": {
+      "goal_rows": 91,
+      "goal_mapped_groups": 489,
+      "start_rows": 90,
+      "start_mapped_groups": 466,
+      "order_answer_length_mismatch": 19
+    }
+  },
+  "base_eligibility": {
+    "train": {
+      "usable_events": 4555,
+      "same_category_skipped": 1171,
+      "missing_start_group": 1110,
+      "eligible_episodes": 1420,
+      "missing_goal_group": 1034
+    },
+    "val": {
+      "same_category_skipped": 124,
+      "usable_events": 350,
+      "missing_goal_group": 128,
+      "eligible_episodes": 89,
+      "missing_start_group": 150
+    }
+  },
+  "temporal_coverage": {
+    "train": {
+      "non_monotonic_or_overlapping": 2271,
+      "usable_events": 2284,
+      "selected_observations": 16269,
+      "eligible_episodes": 1180
+    },
+    "val": {
+      "usable_events": 148,
+      "selected_observations": 963,
+      "non_monotonic_or_overlapping": 202,
+      "eligible_episodes": 67
+    }
+  },
+  "frames_per_phase": 4,
+  "eligible_train_episodes": 1180,
+  "eligible_val_episodes": 67,
+  "train_val_scene_overlap": 0,
+  "calibration_tuning_scene_overlap": 0,
+  "counterbalanced_perception": true,
+  "oracle_frame_selection": true,
+  "temporal_rule": "retain only events with max(START frame) < min(GOAL frame); process selected frames individually in frame order"
+}

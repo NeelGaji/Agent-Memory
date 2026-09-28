@@ -1,0 +1,59 @@
+{
+  "analysis": "downstream_multi_object_world_state_qa",
+  "status": "exploratory: same official validation set previously examined",
+  "frozen_parameters": {
+    "stay": 0.8,
+    "recency_decay": 2.0,
+    "global_calibration_reliability": 0.794344473007712,
+    "time_scale": 2.0
+  },
+  "protocol": {
+    "multi_object_episodes_only": true,
+    "query_start_rule": "queries begin only after every tracked object has at least one observation",
+    "query_frames": "union of selected official RGB evidence frames within episode",
+    "tasks": [
+      "per-object START/GOAL state QA",
+      "GOAL-object set retrieval",
+      "GOAL-object count QA",
+      "whole-world exact state"
+    ],
+    "no_vlm_rerun": true,
+    "no_parameter_retuning": true,
+    "episode_cluster_bootstrap_resamples": 20000
+  },
+  "summary": {
+    "Latest": {
+      "num_queries": 335,
+      "num_episodes": 44,
+      "mean_objects_per_query": 2.7850746268656716,
+      "object_state_accuracy": 0.7814925373134327,
+      "whole_world_exact_accuracy": 0.4925373134328358,
+      "count_exact_accuracy": 0.5522388059701493,
+      "count_mae": 0.5014925373134328,
+      "goal_set_jaccard": 0.7707960199004976,
+      "goal_set_f1": 0.8319023927979152
+    },
+    "Recency-Calibrated": {
+      "num_queries": 335,
+      "num_episodes": 44,
+      "mean_objects_per_query": 2.7850746268656716,
+      "object_state_accuracy": 0.7871641791044776,
+      "whole_world_exact_accuracy": 0.5134328358208955,
+      "count_exact_accuracy": 0.573134328358209,
+      "count_mae": 0.44477611940298506,
+      "goal_set_jaccard": 0.7693034825870647,
+      "goal_set_f1": 0.8260175313906658
+    },
+    "StateMem-Calibrated": {
+      "num_queries": 335,
+      "num_episodes": 44,
+      "mean_objects_per_query": 2.7850746268656716,
+      "object_state_accuracy": 0.7939303482587063,
+      "whole_world_exact_accuracy": 0.5104477611940299,
+      "count_exact_accuracy": 0.5611940298507463,
+      "count_mae": 0.48656716417910445,
+      "goal_set_jaccard": 0.774825870646766,
+      "goal_set_f1": 0.8401397773039564
+    }
+  }
+}

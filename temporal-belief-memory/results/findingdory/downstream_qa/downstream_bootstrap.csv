@@ -1,0 +1,13 @@
+comparison,metric,difference,ci95_low,ci95_high,lower_is_better
+StateMem-Calibrated - Latest,object_state_accuracy,0.012437810945273632,-0.004518413533287228,0.03134328358208955,False
+StateMem-Calibrated - Latest,world_exact,0.01791044776119403,-0.01910828025477707,0.06489675516224189,False
+StateMem-Calibrated - Latest,count_exact,0.008955223880597015,-0.037900874635568516,0.06158357771260997,False
+StateMem-Calibrated - Latest,count_abs_error,-0.014925373134328358,-0.07781066109855218,0.0418998594988793,True
+StateMem-Calibrated - Latest,goal_set_jaccard,0.004029850746268657,-0.019226850735471424,0.028537511870845203,False
+StateMem-Calibrated - Latest,goal_set_f1,0.008237384506041223,-0.011036754280983144,0.029787084821715534,False
+StateMem-Calibrated - Recency-Calibrated,object_state_accuracy,0.00676616915422885,-0.03983501385413573,0.053161208437336266,False
+StateMem-Calibrated - Recency-Calibrated,world_exact,-0.0029850746268656717,-0.09385142476604395,0.08695652173913043,False
+StateMem-Calibrated - Recency-Calibrated,count_exact,-0.011940298507462687,-0.09567977631096443,0.0688622754491018,False
+StateMem-Calibrated - Recency-Calibrated,count_abs_error,0.041791044776119404,-0.05541263559073585,0.15789473684210525,True
+StateMem-Calibrated - Recency-Calibrated,goal_set_jaccard,0.005522388059701492,-0.05241769547325103,0.06656926156926146,False
+StateMem-Calibrated - Recency-Calibrated,goal_set_f1,0.01412224591329069,-0.033348808869222174,0.06729297210213565,False

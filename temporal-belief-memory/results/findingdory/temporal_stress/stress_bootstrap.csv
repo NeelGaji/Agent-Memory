@@ -1,0 +1,23 @@
+regime,comparison,metric,difference,ci95_low,ci95_high
+full,StateMem-Calibrated - Latest,overall_accuracy,0.007268951194184839,-0.003194888178913738,0.01981230448383733
+full,StateMem-Calibrated - Recency-Calibrated,overall_accuracy,0.005192107995846314,-0.005512831277943685,0.01791359325605901
+delay_goal_1,StateMem-Calibrated - Latest,overall_accuracy,0.012461059190031152,0.002941104453534597,0.024291497975708502
+delay_goal_1,StateMem-Calibrated - Recency-Calibrated,overall_accuracy,0.012461059190031152,0.0030241935483870967,0.02405857740585774
+delay_goal_2,StateMem-Calibrated - Latest,overall_accuracy,0.01557632398753894,0.0020181126102665928,0.032015065913371
+delay_goal_2,StateMem-Calibrated - Recency-Calibrated,overall_accuracy,0.017653167185877467,0.0041841004184100415,0.03363938490627922
+delay_goal_3,StateMem-Calibrated - Latest,overall_accuracy,0.01973001038421599,0.0019117732589840712,0.04140802434280694
+delay_goal_3,StateMem-Calibrated - Recency-Calibrated,overall_accuracy,0.014537902388369679,-0.005010145667463312,0.03779432032640961
+sparse_75,StateMem-Calibrated - Latest,overall_accuracy,0.00944963655244029,0.0020086804718650792,0.017584124671361067
+sparse_75,StateMem-Calibrated - Recency-Calibrated,overall_accuracy,0.007580477673935618,-0.000566470250912836,0.016697745248494853
+sparse_50,StateMem-Calibrated - Latest,overall_accuracy,0.022637590861889927,0.011947356776897998,0.03528473092700509
+sparse_50,StateMem-Calibrated - Recency-Calibrated,overall_accuracy,0.017964693665628244,0.0060395192939817115,0.031448977552391115
+sparse_33,StateMem-Calibrated - Latest,overall_accuracy,0.035721703011422634,0.020989977076525383,0.053641059602649005
+sparse_33,StateMem-Calibrated - Recency-Calibrated,overall_accuracy,0.0264797507788162,0.009180391108043908,0.045868246917221155
+consistent_current_evidence,StateMem-Calibrated - Latest,slice_accuracy,0.001451378809869376,-0.003105710808226191,0.006527415143603133
+consistent_current_evidence,StateMem-Calibrated - Recency-Calibrated,slice_accuracy,0.001451378809869376,-0.0031007751937984496,0.006536161585052851
+single_judged_current_evidence,StateMem-Calibrated - Latest,slice_accuracy,0.05263157894736842,-0.0410958904109589,0.14457831325301204
+single_judged_current_evidence,StateMem-Calibrated - Recency-Calibrated,slice_accuracy,0.02631578947368421,-0.05634467180441137,0.10294117647058823
+no_current_state_judgment,StateMem-Calibrated - Latest,slice_accuracy,0.010101010101010102,-0.0106951871657754,0.03665041548585416
+no_current_state_judgment,StateMem-Calibrated - Recency-Calibrated,slice_accuracy,0.010101010101010102,-0.020728087219343695,0.041666666666666664
+weak_or_absent_current_evidence,StateMem-Calibrated - Latest,slice_accuracy,0.021897810218978103,-0.01234663456025685,0.06271809146662892
+weak_or_absent_current_evidence,StateMem-Calibrated - Recency-Calibrated,slice_accuracy,0.014598540145985401,-0.020493206826858294,0.05600086206896544

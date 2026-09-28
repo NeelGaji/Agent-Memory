@@ -1,0 +1,55 @@
+{
+  "calibration_version": "hierarchical_consistency_v2",
+  "global_reliability": 0.794344473007712,
+  "pooled_consistent_reliability": 0.8104265402843602,
+  "single_judged_pooled_n": 112,
+  "single_judged_pooled_correct": 72,
+  "single_judged_pooled_empirical_accuracy": 0.6428571428571429,
+  "single_judged_calibrated_reliability": 0.6311475409836066,
+  "single_judged_policy": "pooled_shrunk",
+  "min_single_pool_n": 30,
+  "judged_n": 1167,
+  "coverage": 0.7874493927125507,
+  "groups": [
+    {
+      "consistency": "consistent",
+      "pred_state": "START",
+      "n": 484,
+      "correct": 391,
+      "empirical_accuracy": 0.8078512396694215,
+      "calibrated_reliability": 0.8078931144761685,
+      "fallback_to_pooled_consistent": false,
+      "calibration_policy": "state_specific_consistent"
+    },
+    {
+      "consistency": "consistent",
+      "pred_state": "GOAL",
+      "n": 571,
+      "correct": 464,
+      "empirical_accuracy": 0.8126094570928196,
+      "calibrated_reliability": 0.8125792958933936,
+      "fallback_to_pooled_consistent": false,
+      "calibration_policy": "state_specific_consistent"
+    },
+    {
+      "consistency": "single_judged",
+      "pred_state": "START",
+      "n": 66,
+      "correct": 37,
+      "empirical_accuracy": 0.5606060606060606,
+      "calibrated_reliability": 0.6311475409836066,
+      "fallback_to_pooled_consistent": false,
+      "calibration_policy": "pooled_shrunk"
+    },
+    {
+      "consistency": "single_judged",
+      "pred_state": "GOAL",
+      "n": 46,
+      "correct": 35,
+      "empirical_accuracy": 0.7608695652173914,
+      "calibrated_reliability": 0.6311475409836066,
+      "fallback_to_pooled_consistent": false,
+      "calibration_policy": "pooled_shrunk"
+    }
+  ]
+}

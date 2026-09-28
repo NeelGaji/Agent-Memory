@@ -1,0 +1,54 @@
+{
+  "analysis_type": "post_hoc_temporal_robustness",
+  "confirmatory_status": "exploratory: same official validation set was previously examined",
+  "frozen_parameters": {
+    "stay": 0.8,
+    "recency_decay": 2.0,
+    "global_calibration_reliability": 0.794344473007712,
+    "time_scale": 2.0
+  },
+  "num_transitions": 148,
+  "num_episodes": 67,
+  "bootstrap_resamples": 20000,
+  "sparse_mask_seeds": 20,
+  "sparse_detail": {
+    "sparse_75": {
+      "keep_probability": 0.75,
+      "num_mask_seeds": 20,
+      "mean_accuracy": {
+        "Latest": 0.67196261682243,
+        "Recency-Calibrated": 0.6738317757009347,
+        "StateMem-Calibrated": 0.6814122533748702
+      }
+    },
+    "sparse_50": {
+      "keep_probability": 0.5,
+      "num_mask_seeds": 20,
+      "mean_accuracy": {
+        "Latest": 0.6079439252336448,
+        "Recency-Calibrated": 0.6126168224299064,
+        "StateMem-Calibrated": 0.6305815160955348
+      }
+    },
+    "sparse_33": {
+      "keep_probability": 0.33,
+      "num_mask_seeds": 20,
+      "mean_accuracy": {
+        "Latest": 0.5528556593977154,
+        "Recency-Calibrated": 0.5620976116303219,
+        "StateMem-Calibrated": 0.588577362409138
+      }
+    }
+  },
+  "baseline_exactly_reconstructed": true,
+  "regimes": [
+    "full",
+    "delay_goal_1",
+    "delay_goal_2",
+    "delay_goal_3",
+    "sparse_75",
+    "sparse_50",
+    "sparse_33"
+  ],
+  "interpretation": "The stress test asks whether StateMem degrades more slowly than Latest/Recency when fresh observations are delayed or sparse. No VLM outputs, model parameters, thresholds, or calibration parameters are changed."
+}
